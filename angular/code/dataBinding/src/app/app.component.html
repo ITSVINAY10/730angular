@@ -1,0 +1,33 @@
+<!--<h1>My name is {{username}}</h1>
+<div class="main">
+  <p>This is the picture of Doremon</p>
+  <p>The sum of {{b}}  and {{c}} is {{b+c}}</p>
+<img src="{{imgURL}}" alt="{{username}}" height="200px">
+ string interpolation always takes as string 
+ <br>
+<button disabled="{{isDisable}}">
+click me
+</button>
+<button [disabled]="isDisable" (click)="fun()">
+click me2
+</button>
+<div [class]="isGood?'x':'y'" id="div">
+I'm a div
+</div>
+</div> -->
+
+
+<!-- 14/09/2024 -->
+ <!-- Template / view-->
+
+ <h1> Hello my name is {{username}} </h1>
+<p>The cose of apple {{price}}</p>
+
+<!-- string interpolation -- transfer data from ts to html-->
+<!-- string interpolatin always interprets values as strings-->
+
+  <button [disabled]="isDisable">
+    click me
+    </button>
+<div [class]="myclass? 'x':'y'">Hello</div>
+<button (click)="fun()">Click me 2</button>
