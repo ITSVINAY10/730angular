@@ -1,0 +1,35 @@
+<!-- simple if -->
+
+
+
+
+
+
+
+<!-- ng switch -->
+ <h1>Week Days:</h1>
+ <div [ngSwitch]="day">
+  <p *ngSwitchCase="1">Monday</p>
+  <p *ngSwitchCase="2">Tuesday</p>
+  <p *ngSwitchCase="3">Wednesday</p>
+  <p *ngSwitchCase="4">Thursday</p>
+  <p *ngSwitchCase="5">Friday</p>
+  <p *ngSwitchCase="6">Saturday</p>
+  <p *ngSwitchCase="7">Sunday</p>
+  <p *ngSwitchDefault>Please go with proper value</p>
+ </div>
+
+
+ <!-- ngFor -->
+  <div *ngFor="let i of fruits ; let ind = index;let e=even; let o=odd">
+    <!--<div *ngIf="e">
+      <p>I Love {{i}} {{ind}} {{e}}</p>
+
+    </div>-->
+    <div *ngIf="o"></div>
+      <p>I Love {{i}} {{ind}} {{e}}</p>
+
+    </div>
+      
+  </div>
+  <p>i ovee {{fruits[2]}}</p>
