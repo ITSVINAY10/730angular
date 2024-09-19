@@ -1,0 +1,23 @@
+
+
+  <div class="products"
+[ngStyle]="{'fontSize':isHeading?'28px':'18px','background-color':bgColor }"
+*ngIf="isShow">
+<h3 style="color: white;font-size: 48px; margin: 15%;"><span style="font-size: 68px;color: red;">E</span>xplore <span style="font-size: 55px;"> <span style="font-size: 84px;margin-left: 25%;color: red;">P</span>roducts</span></h3>
+  <div class="product" *ngFor="let p of products" [ngClass]="{'dark':isDark}">
+   
+    <img src={{p.image}} alt={{p.title}} height="200">
+    <h2>{{p.title}}</h2>
+    <p>Price: {{p.price | currency:"INR"}}</p>
+    <button>Add to cart</button>
+  
+  </div>
+  <br>
+ 
+  <button (click)="fun2()" id="btn2" >click me to close</button>
+</div>
+<br><hr>
+<div><h1>To get products click the button</h1></div>
+
+<button  (click)="fun1()" id="btn">click me to open</button>
+
