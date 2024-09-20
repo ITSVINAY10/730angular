@@ -49,3 +49,19 @@ h1{
 #btn2:hover{
     background-color: blueviolet;
 }
+.disc{
+    position: fixed;
+    width: max-content;
+    background-color:skyblue;
+    font-size: 28px;
+    animation: slide 15s  infinite;
+}
+@keyframes slide{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -50%;
+        color: black;
+    }
+}

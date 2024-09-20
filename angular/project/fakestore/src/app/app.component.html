@@ -1,5 +1,7 @@
-
-
+<p>The square of {{b}}</p>
+<p>The power of {{c|square}} with 3 is {{c|power:3}}</p>
+<!-- {{obj | json}}-->
+<p class="disc">Congrats You can use vinay to get {{a | percent: '1.0-2'}} discount excluding tax {{tax | number:'2.2-2' | percent:'2.0-2'}}</p><br>
   <div class="products"
 [ngStyle]="{'fontSize':isHeading?'28px':'18px','background-color':bgColor }"
 *ngIf="isShow">
@@ -7,6 +9,7 @@
   <div class="product" *ngFor="let p of products" [ngClass]="{'dark':isDark}">
    
     <img src={{p.image}} alt={{p.title}} height="200">
+    <p>{{dt | date:"dd/MM/YYYY HH:mm:SS"}}</p>
     <h2>{{p.title}}</h2>
     <p>Price: {{p.price | currency:"INR"}}</p>
     <button>Add to cart</button>
