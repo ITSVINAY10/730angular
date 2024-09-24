@@ -1,0 +1,7 @@
+<h1>Enter Name to Print</h1>
+<div>
+  <app-parent [name1]="displayName"></app-parent>
+</div>
+<div *ngIf="name1">
+  <h3>I'm  {{ name1 }}</h3>
+</div>

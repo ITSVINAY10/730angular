@@ -1,0 +1,11 @@
+<p>parent works</p>
+<div id="input">
+    <input type="text" [(ngModel)]="name" placeholder="Enter Name to Print in Child">
+    <button (click)="updateName()">Submit</button>
+</div>
+
+<div>
+    <app-child [name]="displayName"></app-child>
+</div>
+
+

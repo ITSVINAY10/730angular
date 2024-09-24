@@ -1,0 +1,11 @@
+<p>child works!</p>
+<div id="input1">
+    <input type="text"  [(ngModel)]="name1" placeholder="Enter Name to Print in Parent">
+    <button (click)="updateName()" >Submit</button>
+    
+</div>
+<div *ngIf="name">
+    <h3>I'm  {{ name }}</h3>
+</div>
+
+ 
