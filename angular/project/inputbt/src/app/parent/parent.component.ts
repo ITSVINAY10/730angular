@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ChildComponent } from '../child/child.component';
 
 @Component({
   selector: 'app-parent',
@@ -6,15 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './parent.component.css'
 })
 export class ParentComponent {
+  parentName: string = '';
+  childName: string = '';
 
-  name: string = ''; 
-  name1:string = '';
-
-  displayName: string = '';  
-
-  updateName() {
-    this.displayName = this.name; 
-    this.displayName = this.name1; 
+  // Method to update child's name
+  updateFromChild(newName: string) {
+    this.childName = newName;
   }
 
 }

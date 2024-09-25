@@ -1,0 +1,28 @@
+
+header{
+    background-color: rgb(189, 30, 30);
+    color: white;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+    position: fixed;
+    width:97.8vw ;
+    height: 10vh;
+    margin-right: 20%;
+    overflow: hidden;
+}
+
+
+span{
+    font-size: 32px;
+    color: rgb(48, 19, 213);
+    font-style: italic;
+
+}
+
+.container p {
+    margin-left: 32%;
+
+}
+

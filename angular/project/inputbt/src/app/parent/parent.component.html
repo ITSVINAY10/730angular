@@ -1,11 +1,11 @@
-<p>parent works</p>
-<div id="input">
-    <input type="text" [(ngModel)]="name" placeholder="Enter Name to Print in Child">
-    <button (click)="updateName()">Submit</button>
-</div>
-
 <div>
-    <app-child [name]="displayName"></app-child>
+  <h2>Parent Component</h2>
+  <input [(ngModel)]="parentName" placeholder="Enter parent name">
+  <button (click)="parentName = ''">Clear Parent Input</button>
+
+  <!-- Pass parentName to child component -->
+  <app-child [parentName]="parentName" (nameEvent)="updateFromChild($event)"></app-child>
+
+  <p>Child's name is: {{ childName }}</p>
 </div>
-
-
+  
