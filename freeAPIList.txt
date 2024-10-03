@@ -1,0 +1,14 @@
+sampleapis
+jsonplaceholder
+fakestoreapi
+dummyjson
+https://official-joke-api.appspot.com/random_joke
+https://api.quotable.io/random
+random.me
+newsapi(dev...)
+omdb api
+tmdb api
+pokeapi
+https://publicapis.dev/
+
+https://pokeapi.co/api/v2/pokemon/pikachu

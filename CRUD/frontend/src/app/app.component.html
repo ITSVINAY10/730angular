@@ -1,0 +1,20 @@
+<div id="input">
+  <input type="text" placeholder="Enter the Movie Name" [(ngModel)]="mTitle">
+  <input type="text" placeholder="Enter the Released Year " [(ngModel)]="mYear">
+  <button (click)="sendData()">Submit</button>
+</div>
+<h1>Movies List</h1>
+<div id="movies" >
+  <div *ngFor="let m of movies" id="movie">
+    <h2>{{m.Title}}</h2>
+    <p>Year:{{m.Year}} </p>
+    <button (click)="Edit(m)" >Edit</button> 
+    <button (click)="deleteMovie(m.id)">Delete</button>
+
+  </div>
+</div><br><hr>
+<div *ngIf="isUpdate">
+  <input type="text" placeholder="Give Movie Name" [(ngModel)]="updateValue.Title">
+  <input type="text" placeholder="Give movie Release Year" [(ngModel)]="updateValue.Year">
+  <button (click)="updateData()" >Update Data</button>
+</div>
