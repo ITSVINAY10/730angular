@@ -11,7 +11,6 @@ export class AppComponent {
   mTitle:string='';
   mYear!:number;
   updateValue={
-    id: '',
     Title:'',
     Year:''
 };
@@ -52,10 +51,10 @@ sendData()
     window.location.reload()
   })
 }
-Edit(m:any)
+Edit(v:any)
 {
   this.isUpdate=true;
-  this.updateValue=m;
+  this.updateValue=v;
   
 }
 updateData()

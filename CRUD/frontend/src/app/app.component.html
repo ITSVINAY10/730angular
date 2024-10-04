@@ -8,7 +8,7 @@
   <div *ngFor="let m of movies" id="movie">
     <h2>{{m.Title}}</h2>
     <p>Year:{{m.Year}} </p>
-    <button (click)="Edit(m)" >Edit</button> 
+    <button (click)="Edit(m!)">Edit</button> 
     <button (click)="deleteMovie(m.id)">Delete</button>
 
   </div>
