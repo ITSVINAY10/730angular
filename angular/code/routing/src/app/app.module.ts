@@ -11,6 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProjectComponent } from './project/project.component';
+import { DashBoardComponent } from './dash-board/dash-board.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ProjectComponent } from './project/project.component';
     ContactComponent,
     HomeComponent,
     NotFoundComponent,
-    ProjectComponent
+    ProjectComponent,
+    DashBoardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

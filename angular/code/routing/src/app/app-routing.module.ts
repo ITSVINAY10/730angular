@@ -7,6 +7,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProjectComponent } from './project/project.component';
+import { DashBoardComponent } from './dash-board/dash-board.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path:'', component:HomeComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path:'about' ,component:AboutComponent},
   { path:'projects', component:ProjectsComponent},
   { path:'contact', component:ContactComponent},
+  { path:'login', component:LoginComponent},
+  { path: 'dashBoard',component:DashBoardComponent},
   { path:'projects/:id', component:ProjectComponent},
   { path:'**',component:NotFoundComponent}
   
